@@ -1051,14 +1051,14 @@ footer p {
     letter-spacing: 0.05em;
 }
 
-footer p a {
+footer .footer-links a {
     text-decoration: none; 
     color: var(--accent-blue);
     transition: color 0.3s;
     line-height: 1.6;
 }
 
-footer p a:hover {
+footer .footer-links a:hover {
     color: #9c27b0;
 }
 
