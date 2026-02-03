@@ -3,200 +3,98 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style/style.css" />
-        <link rel="stylesheet" href="style/icons.css" />
+        <title>Abserny - Releases</title>
+        <meta name="description" content="Download the latest versions of Abserny - core application, mobile app, and custom models.">
+
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <title>VisionX - Releases</title>
-        <style>
-        .release-hero {
-            padding: 10rem 0 6rem;
-            text-align: center;
-        }
 
-        .release-hero h1 {
-            font-size: 3.5rem;
-            font-weight: 300;
-            letter-spacing: 0.1em;
-            margin-bottom: 1.5rem;
-        }
-
-        .release-hero p {
-            font-size: 1.2rem;
-            color: var(--text-secondary);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .releases-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 3rem;
-            margin-top: 4rem;
-        }
-
-        .release-card {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 16px;
-            padding: 2.5rem;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .release-card:hover {
-            border-color: var(--accent-blue);
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(96, 165, 250, 0.1);
-        }
-
-        .release-badge {
-            position: absolute;
-            top: -12px;
-            right: 2rem;
-            background: var(--accent-blue);
-            color: var(--bg-dark);
-            padding: 0.4rem 1rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.05em;
-        }
-
-        .release-card h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: var(--accent-blue);
-        }
-
-        .release-date {
-            color: var(--text-tertiary);
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .release-card p {
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-            line-height: 1.7;
-        }
-
-        .release-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .release-btn {
-            padding: 0.8rem 1.8rem;
-            background: var(--accent-blue-dim);
-            border: 1px solid var(--accent-blue);
-            color: var(--accent-blue);
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .release-btn.primary {
-            background: var(--accent-blue);
-            color: var(--bg-dark);
-        }
-
-        .release-btn:hover {
-            background: rgba(96, 165, 250, 0.3);
-            transform: translateY(-2px);
-        }
-
-        .release-btn.primary:hover {
-            background: #3b82f6;
-        }
-
-        @media (max-width: 768px) {
-            .releases-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .release-hero h1 {
-                font-size: 2.8rem;
-            }
-        }
-        </style>
+        <!-- Styles -->
+        <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
-        <!-- Your existing header (same as other pages) -->
+        <!-- Header -->
         <header>
-            <div class="container">
+            <div class="container-header">
                 <div class="header-content">
-                    <a href="index.html" class="logo"><img src="assets/images/iccon(1).png" alt="logo" width="30" />VisionX</a>
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/absernyy.png" alt="Abserny Logo" width="120">
+                    </a>
                     <nav>
                         <a href="index.html">Home</a>
-                        <a href="doc.html">Docs</a>
-                        <a href="updates.html">Updates</a>
                         <a href="about.html">About</a>
                         <a href="releases.html" class="active">Releases</a>
+                        <a href="https://docs.abserny.com" target="_blank">Docs</a>
+                        <a href="https://github.com/Abserny" target="_blank">GitHub</a>
                     </nav>
                 </div>
             </div>
         </header>
 
-        <main class="container">
+        <main>
+            <!-- Hero -->
             <section class="release-hero">
-                <h1>Releases</h1>
-                <p>All official versions of VisionX — core application, mobile app, speech models, and more.</p>
+                <div class="container">
+                    <h1>Releases</h1>
+                    <p>All official versions of Abserny — core application, mobile app, speech models, and more.</p>
+                </div>
             </section>
 
-            <section class="releases-grid">
-                <!-- Core Release -->
-                <div class="release-card">
-                <span class="release-badge badge-latest">Latest</span>
-                <h3>Core Application v1.0.2</h3>
-                <p class="release-date">December 25, 2025</p>
-                <p>The complete desktop/web version with offline YOLO object detection, Vosk speech recognition, and natural language feedback.</p>
-                <div class="release-links">
-                    <a href="https://github.com/VissionX/VisionX/releases/tag/v1.0.2" class="release-btn primary">Download</a>
-                    <a href="https://github.com/VissionX/VisionX/releases" class="release-btn">Changelog</a>
-                </div>
-            </div>
+            <!-- Releases Grid -->
+            <section>
+                <div class="container">
+                    <div class="releases-grid">
+                        <!-- Core Release -->
+                        <div class="release-card">
+                            <span class="release-badge badge-latest">Latest</span>
+                            <h3>Core Application v1.0.2</h3>
+                            <p class="release-date">December 25, 2024</p>
+                            <p>The complete desktop/web version with offline YOLO object detection, Vosk speech recognition, and natural language feedback.</p>
+                            <div class="release-links">
+                                <a href="https://github.com/Abserny/Abserny/releases/tag/v1.0.2" class="btn-primary" target="_blank">Download</a>
+                                <a href="https://github.com/Abserny/releases" class="btn-secondary" target="_blank">Changelog</a>
+                            </div>
+                        </div>
 
-            <!-- Mobile App - In Development -->
-            <div class="release-card">
-                <span class="release-badge badge-development">In Development</span>
-                <h3>Mobile App</h3>
-                <p class="release-date">Expected Early 2026</p>
-                <p>Native mobile experience with optimized performance, touch feedback, and battery-efficient listening. Currently in active development.</p>
-                <div class="release-links">
-                    <a href="install.html" class="release-btn">Get Notified</a>
-                    <a href="updates.html" class="release-btn">Follow Progress</a>
-                </div>
-            </div>
+                        <!-- Mobile App -->
+                        <div class="release-card">
+                            <span class="release-badge badge-development">In Development</span>
+                            <h3>Mobile App</h3>
+                            <p class="release-date">Expected Early 2026</p>
+                            <p>Native mobile experience with optimized performance, touch feedback, and battery-efficient listening. Currently in active development.</p>
+                            <div class="release-links">
+                                <a href="install.html" class="btn-secondary">Get Notified</a>
+                                <a href="https://docs.abserny.com" class="btn-secondary" target="_blank">Follow Progress</a>
+                            </div>
+                        </div>
 
-            <!-- Speech Model - Planned -->
-            <div class="release-card">
-                <span class="release-badge badge-planned">Planned</span>
-                <h3>Custom Speech Model</h3>
-                <p class="release-date">2026</p>
-                <p>Fine-tuned model optimized for accessibility commands and noisy environments. Will be released as a standalone downloadable model.</p>
-                <div class="release-links">
-                    <a href="updates.html" class="release-btn">Track Updates</a>
-                </div>
-            </div>
+                        <!-- Speech Model -->
+                        <div class="release-card">
+                            <span class="release-badge badge-planned">Planned</span>
+                            <h3>Custom Speech Model</h3>
+                            <p class="release-date">2026</p>
+                            <p>Fine-tuned model optimized for accessibility commands and noisy environments. Will be released as a standalone downloadable model.</p>
+                            <div class="release-links">
+                                <a href="https://docs.abserny.com" class="btn-secondary" target="_blank">Track Updates</a>
+                            </div>
+                        </div>
 
-            <!-- Future Features - Planned -->
-            <div class="release-card">
-                <span class="release-badge badge-planned">Planned</span>
-                <h3>Future Releases</h3>
-                <p class="release-date">2026+</p>
-                <p>Directional audio cues, hazard detection, multi-language support, and integration modules for smart devices.</p>
-                <div class="release-links">
-                    <a href="updates.html" class="release-btn">See Roadmap</a>
+                        <!-- Future Features -->
+                        <div class="release-card">
+                            <span class="release-badge badge-planned">Planned</span>
+                            <h3>Future Releases</h3>
+                            <p class="release-date">2026+</p>
+                            <p>Directional audio cues, hazard detection, multi-language support, and integration modules for smart devices.</p>
+                            <div class="release-links">
+                                <a href="https://docs.abserny.com" class="btn-secondary" target="_blank">See Roadmap</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
             </section>
         </main>
-
-        <!-- Your existing footer -->
 
         <!-- Footer -->
         <footer class="site-footer">
@@ -204,7 +102,9 @@
                 <div class="footer-content">
                     <div class="footer-main">
                         <div class="footer-logo">
-                            <span class="logo-text"><img src="assets/images/iccon(1).png" alt="logo" width="35"/>VisionX</span>
+                            <span class="logo-text">
+                                <img src="assets/images/absernyy.png" alt="Abserny Icon" width="120">
+                            </span>
                             <p class="footer-tagline">Voice-activated object detection for the visually impaired</p>
                         </div>
                         <p class="footer-description">
@@ -218,43 +118,24 @@
                             <h4>Project</h4>
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="doc.html">Documentation</a></li>
-                                <li><a href="updates.html">Updates</a></li>
                                 <li><a href="about.html">About</a></li>
+                                <li><a href="releases.html">Releases</a></li>
                             </ul>
                         </div>
                         <div class="footer-links-column">
                             <h4>Resources</h4>
                             <ul>
-                                <li><a href="https://github.com/VissionX/VisionX" target="_blank">GitHub Repository</a></li>
-                                <li><a href="https://github.com/VissionX/VisionX/issues" target="_blank">Report Issue</a></li>
-                                <li><a href="install.html">Mobile App Status</a></li>
+                                <li><a href="https://github.com/Abserny/Abserny" target="_blank">GitHub Repository</a></li>
+                                <li><a href="https://github.com/Abserny/issues" target="_blank">Report Issue</a></li>
+                                <li><a href="https://docs.abserny.com" target="_blank">Documentation</a></li>
                             </ul>
                         </div>
                         <div class="footer-links-column">
                             <h4>Contact</h4>
-                            <ul class="footer-contact">
-                                <li>
-                                    <!-- <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> -->
-                                    <!--     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path> -->
-                                    <!--     <polyline points="22,6 12,13 2,6"></polyline> -->
-                                    <!-- </svg> -->
-                                    <a href="mailto:alsaeedalbasi0ny@gmail.com">contact@visionx-project.com</a>
-                                </li>
-                                <li>
-                                    <!-- <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> -->
-                                    <!--     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path> -->
-                                    <!--     <rect x="2" y="9" width="4" height="12"></rect> -->
-                                    <!--     <circle cx="4" cy="4" r="2"></circle> -->
-                                    <!-- </svg> -->
-                                    <a href="https://discord.gg/your-invite" target="_blank">Discord</a>
-                                </li>
-                                <li>
-                                    <!-- <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> -->
-                                    <!--     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path> -->
-                                    <!-- </svg> -->
-                                    <a href="https://twitter.com/visionx_ai" target="_blank">@visionx_ai</a>
-                                </li>
+                            <ul>
+                                <li><a href="mailto:contact@abserny.com">contact@abserny.com</a></li>
+                                <li><a href="https://discord.gg/your-invite" target="_blank">Discord</a></li>
+                                <li><a href="https://twitter.com/abserny" target="_blank">@abserny</a></li>
                             </ul>
                         </div>
                     </div>
@@ -262,23 +143,23 @@
 
                 <div class="footer-bottom">
                     <p class="copyright">
-                        © 2025 VisionX • Graduation Project • All rights reserved<br>
+                        © 2025 Abserny • Graduation Project • All rights reserved<br>
                         <span class="credit">Built with care by students exploring AI for accessibility</span>
                     </p>
                     <div class="social-links">
-                        <a href="https://github.com/VissionX" aria-label="GitHub">
+                        <a href="https://github.com/Abserny" aria-label="GitHub">
                             <span class="mdi--github"></span>
                         </a>
-                        <a href="https://discord.gg/your-invite" aria-label="Kaggle">
+                        <a href="https://kaggle.com/abserny" aria-label="Kaggle">
                             <span class="cib--kaggle"></span>
                         </a>
                         <a href="https://discord.gg/your-invite" aria-label="Discord">
                             <span class="ic--baseline-discord"></span>
                         </a>
-                        <a href="https://twitter.com/visionx_ai" aria-label="Twitter / X">
+                        <a href="https://twitter.com/abserny" aria-label="Twitter">
                             <span class="line-md--twitter-x"></span>
                         </a>
-                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

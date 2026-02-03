@@ -1,64 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VisionX Mobile - Coming Soon</title>
-    <link rel="stylesheet" href="style/style.css"> <!-- Reuse your main styles -->
-    <style>
-        .coming-soon-page {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 4rem 2rem;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Abserny Mobile - Coming Soon</title>
+        <meta name="description" content="Get notified when Abserny mobile app launches. Bringing voice-activated object detection to your smartphone.">
 
-        .coming-soon-content {
-            max-width: 700px;
-        }
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-        .coming-soon-content h1 {
-            font-size: 4rem;
-            font-weight: bold;
-            margin-bottom: 2rem;
-        }
+        <!-- Styles -->
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container-header">
+                <div class="header-content">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/absernyy.png" alt="Abserny Logo" width="120">
+                    </a>
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="releases.html">Releases</a>
+                        <a href="https://docs.abserny.com" target="_blank">Docs</a>
+                        <a href="https://github.com/Abserny" target="_blank">GitHub</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
-        .coming-soon-content p {
-            font-size: 1.3rem;
-            color: var(--text-secondary);
-            margin-bottom: 3rem;
-            line-height: 1.8;
-        }
+        <main>
+            <!-- Coming Soon Hero -->
+            <section class="coming-soon-page">
+                <div class="container">
+                    <div class="coming-soon-content">
+                        <div class="mobile-icon">📱</div>
+                        <h1>Mobile App Coming Soon</h1>
+                        <p>
+                            We're working hard on the Abserny mobile experience. The app will bring the full power of offline object detection and voice feedback directly to your smartphone.
+                        </p>
 
-        .back-home {
-            color: var(--accent-blue);
-            text-decoration: none;
-            font-size: 1.1rem;
-            padding: 1rem 2rem;
-            border: 1px solid var(--accent-blue);
-            border-radius: 8px;
-            transition: all 0.3s;
-        }
+                        <div class="features-preview">
+                            <div class="preview-item">
+                                <span class="preview-icon">⚡</span>
+                                <h3>Optimized Performance</h3>
+                                <p>Mobile-optimized YOLOv8 for fast inference on device</p>
+                            </div>
+                            <div class="preview-item">
+                                <span class="preview-icon">🔋</span>
+                                <h3>Battery Efficient</h3>
+                                <p>Smart listening mode that conserves battery life</p>
+                            </div>
+                            <div class="preview-item">
+                                <span class="preview-icon">📳</span>
+                                <h3>Haptic Feedback</h3>
+                                <p>Touch and vibration feedback for enhanced accessibility</p>
+                            </div>
+                        </div>
 
-        .back-home:hover {
-            background: var(--accent-blue-dim);
-        }
-    </style>
-</head>
-<body>
-    <div class="coming-soon-page">
-        <div class="coming-soon-content">
-            <h1>Mobile App Coming Soon</h1>
-            <p>
-                We're working hard on the VisionX mobile experience. The app will bring the full power of offline object detection and voice feedback directly to your smartphone.
-            </p>
-            <p>
-                Stay tuned — we'll announce it here and on our updates page when it's ready.
-            </p>
-            <a href="index.html" class="back-home">← Back to Home</a>
-        </div>
-    </div>
-</body>
+                        <div class="notify-section">
+                            <h2>Get Notified</h2>
+                            <p>Stay tuned — we'll announce it on our GitHub and documentation site when it's ready.</p>
+                            <div class="notify-buttons">
+                                <a href="https://github.com/Abserny" class="btn-primary" target="_blank">Watch on GitHub</a>
+                                <a href="https://docs.abserny.com" class="btn-secondary" target="_blank">Follow Updates</a>
+                            </div>
+                        </div>
+
+                        <div class="status-info">
+                            <h3>Development Status</h3>
+                            <div class="status-timeline">
+                                <div class="status-item completed">
+                                    <span class="status-marker">✓</span>
+                                    <div class="status-content">
+                                        <h4>Core Application</h4>
+                                        <p>Desktop version released and tested</p>
+                                    </div>
+                                </div>
+                                <div class="status-item active">
+                                    <span class="status-marker">⏳</span>
+                                    <div class="status-content">
+                                        <h4>Mobile Development</h4>
+                                        <p>Currently optimizing for iOS and Android</p>
+                                    </div>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-marker">○</span>
+                                    <div class="status-content">
+                                        <h4>Beta Testing</h4>
+                                        <p>Expected Q1 2026</p>
+                                    </div>
+                                </div>
+                                <div class="status-item">
+                                    <span class="status-marker">○</span>
+                                    <div class="status-content">
+                                        <h4>Public Release</h4>
+                                        <p>Expected Early 2026</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="index.html" class="back-link">← Back to Home</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-main">
+                        <div class="footer-logo">
+                            <span class="logo-text">
+                                <img src="assets/images/absernyy.png" alt="Abserny Icon" width="120">
+                            </span>
+                            <p class="footer-tagline">Voice-activated object detection for the visually impaired</p>
+                        </div>
+                        <p class="footer-description">
+                            A graduation project exploring the potential of AI to create meaningful accessibility tools. 
+                            Built with privacy, simplicity, and real-world impact in mind.
+                        </p>
+                    </div>
+
+                    <div class="footer-links-grid">
+                        <div class="footer-links-column">
+                            <h4>Project</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="releases.html">Releases</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-column">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="https://github.com/Abserny" target="_blank">GitHub Repository</a></li>
+                                <li><a href="https://github.com/Abserny/issues" target="_blank">Report Issue</a></li>
+                                <li><a href="https://docs.abserny.com" target="_blank">Documentation</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-column">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="mailto:contact@abserny.com">contact@abserny.com</a></li>
+                                <li><a href="https://discord.gg/your-invite" target="_blank">Discord</a></li>
+                                <li><a href="https://twitter.com/abserny" target="_blank">@abserny</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="copyright">
+                        © 2025 Abserny • Graduation Project • All rights reserved<br>
+                        <span class="credit">Built with care by students exploring AI for accessibility</span>
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/Abserny" aria-label="GitHub">
+                            <span class="mdi--github"></span>
+                        </a>
+                        <a href="https://kaggle.com/abserny" aria-label="Kaggle">
+                            <span class="cib--kaggle"></span>
+                        </a>
+                        <a href="https://discord.gg/your-invite" aria-label="Discord">
+                            <span class="ic--baseline-discord"></span>
+                        </a>
+                        <a href="https://twitter.com/abserny" aria-label="Twitter">
+                            <span class="line-md--twitter-x"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
