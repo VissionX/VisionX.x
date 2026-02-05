@@ -136,6 +136,23 @@ nav a {
     position: relative;
 }
 
+.github{
+    padding: 0 10px;
+    /* background: var(--accent-blue); */
+    color: var(--accent-blue);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: var(--font-size-base);
+    transition: all var(--transition-normal);
+    border: 2px solid var(--accent-blue);
+    cursor: pointer;
+}
+
+.github:hover {
+    background: var(--accent-blue);
+    color: var(--bg-dark);
+}
+
 nav a:hover,
 nav a.active {
     color: var(--accent-blue);
@@ -144,11 +161,15 @@ nav a.active {
 nav a.active::after {
     content: '';
     position: absolute;
-    bottom: -8px;
+    bottom: -1px;
     left: 0;
     right: 0;
     height: 2px;
     background: var(--accent-blue);
+}
+
+nav a i {
+    font-size: 12px;
 }
 
 /* === Hero Section === */
@@ -205,7 +226,7 @@ nav a.active::after {
 
 .cta-button:hover,
 .btn-primary:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
     box-shadow: 0 10px 30px rgba(96, 165, 250, 0.4);
 }
 
@@ -261,7 +282,7 @@ section {
 .tech-card:hover,
 .value-card:hover {
     border-color: var(--accent-blue);
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
     box-shadow: 0 20px 40px rgba(96, 165, 250, 0.1);
 }
 
@@ -1030,7 +1051,7 @@ to { opacity: 1; transform: translateY(0); }
 
 .release-card:hover {
     border-color: var(--accent-blue);
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
     box-shadow: 0 20px 40px rgba(96, 165, 250, 0.1);
 }
 
@@ -1130,7 +1151,7 @@ to { opacity: 1; transform: translateY(0); }
 
 .preview-item:hover {
     border-color: var(--accent-blue);
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
 }
 
 .preview-icon {
