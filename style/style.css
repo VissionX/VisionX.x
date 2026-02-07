@@ -227,7 +227,7 @@ nav a i {
 .cta-button:hover,
 .btn-primary:hover {
     /* transform: scale(1.05); */
-    box-shadow: 0 10px 30px rgba(96, 165, 250, 0.4);
+    /* box-shadow: 0 10px 30px rgba(96, 165, 250, 0.4); */
 }
 
 .btn-secondary {
@@ -283,7 +283,7 @@ section {
 .value-card:hover {
     border-color: var(--accent-blue);
     /* transform: translateY(-10px); */
-    box-shadow: 0 20px 40px rgba(96, 165, 250, 0.1);
+    /* box-shadow: 0 20px 40px rgba(96, 165, 250, 0.1); */
 }
 
 .card h3,
@@ -411,10 +411,12 @@ section {
 
 .scene-stage {
     padding: var(--spacing-md);
+    max-height: 440px;
     min-height: 440px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -790,7 +792,7 @@ to { opacity: 1; transform: translateY(0); }
 
 .team-member:hover {
     border-color: var(--accent-blue);
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
 }
 
 .team-photo {
@@ -1293,7 +1295,7 @@ to { opacity: 1; transform: translateY(0); }
 
 /* === Responsive Updates === */
 @media (max-width: 968px) {
-    .releases-grid {
+   min .releases-grid {
         grid-template-columns: 1fr;
     }
 
